@@ -26,8 +26,8 @@
         <!-- <img class="pnglogo" src="" alt="" /> -->
         <div class="saludo">Hello World!</div>
       </section>
-      
-      <div class="menu">
+
+      <div class="menu" id="menu">
         <ul class="menuul">
           <!-- <li class="menuli">
             <a style="text-decoration-line: none" href="#header">
@@ -36,26 +36,116 @@
           </li> -->
           <li class="menuli">
             <a style="text-decoration-line: none" href="#educacion">
-              <a style="color: white"><ul style="text-align: center;"><i class="fas fa-user-graduate"></i></ul><ul>Educacion</ul></a></a
+              <a style="color: white"
+                ><ul style="text-align: center">
+                  <i class="fas fa-user-graduate"></i>
+                </ul>
+                <ul>
+                  Educacion
+                </ul></a
+              ></a
             >
           </li>
           <li class="menuli">
             <a style="text-decoration-line: none" href="#skill">
-              <a style="color: white"><ul style="text-align: center;"><i class="fas fa-code"></i></ul><ul>Skills</ul></a></a
+              <a style="color: white"
+                ><ul style="text-align: center">
+                  <i class="fas fa-code"></i>
+                </ul>
+                <ul>
+                  Skills
+                </ul></a
+              ></a
             >
           </li>
           <li class="menuli">
             <a style="text-decoration-line: none" href="#projects">
-              <a style="color: white"><ul style="text-align: center;"><i class="fas fa-laptop-code"></i></ul><ul>Proyectos</ul></a></a
-              >
+              <a style="color: white"
+                ><ul style="text-align: center">
+                  <i class="fas fa-laptop-code"></i>
+                </ul>
+                <ul>
+                  Proyectos
+                </ul></a
+              ></a
+            >
           </li>
           <li class="menuli">
             <a style="text-decoration-line: none" href="#contactme">
-              <a style="color: white"><ul style="text-align: center;"><i class="far fa-address-book"></i></ul><ul>Contacto</ul></a></a
-              >
+              <a style="color: white"
+                ><ul style="text-align: center">
+                  <i class="far fa-address-book"></i>
+                </ul>
+                <ul>
+                  Contacto
+                </ul></a
+              ></a
+            >
           </li>
         </ul>
       </div>
+
+      <section class="menuw">
+        <!-- Menú (wrapper) -->
+        <div id="menuWrapper" class="menu-wrapper" style="text-align: center">
+          <button id="menuToggle" class="menu-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div id="wrapperMenu" class="menu">
+            <ul>
+              <li class="menuli">
+                <a style="text-decoration-line: none" href="#educacion">
+                  <a style="color: white"
+                    ><ul style="text-align: center">
+                      <i class="fas fa-user-graduate"></i>
+                    </ul>
+                    <ul>
+                      Educacion
+                    </ul></a
+                  ></a
+                >
+              </li>
+              <li class="menuli">
+                <a style="text-decoration-line: none" href="#skill">
+                  <a style="color: white"
+                    ><ul style="text-align: center">
+                      <i class="fas fa-code"></i>
+                    </ul>
+                    <ul>
+                      Hard Skill
+                    </ul></a
+                  ></a
+                >
+              </li>
+              <li class="menuli">
+                <a style="text-decoration-line: none" href="#projects">
+                  <a style="color: white"
+                    ><ul style="text-align: center">
+                      <i class="fas fa-laptop-code"></i>
+                    </ul>
+                    <ul>
+                      Proyectos
+                    </ul></a
+                  ></a
+                >
+              </li>
+              <li class="menuli">
+                <a style="text-decoration-line: none" href="#contactme">
+                  <a style="color: white"
+                    ><ul style="text-align: center">
+                      <i class="far fa-address-book"></i>
+                    </ul>
+                    <ul>
+                      Contacto
+                    </ul></a
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="socialmedia">
         <ul class="socialmediaul">
           <li class="socialmediali">
@@ -78,8 +168,8 @@
               <i class="fab fa-instagram" style="color: white"></i>
             </a>
           </li> -->
-          
-<!-- 
+
+          <!-- 
           <li class="socialmediali"></li> -->
         </ul>
       </section>
@@ -87,26 +177,49 @@
   </header>
 
   <body>
-   
-    <h1>ANDERMATTEN MAURICIO</h1>
+    
 
-    <div class="acerdace">
+    <!-- <div class="acerdace">
       <h2>Sobre mi</h2>
       <hr />
       <h3>andermattenmauricio@gmail.com</h3>
       <p>27/05/1991</p>
       <h3>Santa fe - Argentina</h3>
       <h3>Apasionado a la tecnologia</h3>
-    </div>
+    </div> -->
+
+    <section id="about-me">
+    
+      <h2 style="padding-top: 70px;text-align: left;">Sobre mi</h2>
+      <h1>ANDERMATTEN MAURICIO</h1>
+      <div class="about-content">
+        <img src="img/imagenperfil.jpg" alt="Profile Picture" />
+        <p>
+          Hola, mi nombre es Mauricio Andermatten, un desarrolador JR que se situa en Santa fe,
+         Argentina. Soy un apasianado a la tecnologia y tengo 2 años de experiencia en lo que respecta 
+          a frontend con distintos cursos que lo avalan.
+        </p>
+        <p>
+          Estoy haciendo especializaciones en backend y he trabajado en un par de proyectos
+          Disfruto mucho de la innovacion y ampliando mis conocimientos frontend.
+        </p>
+        <p>
+          En el tiempo libre me gusta mucho codear para proyectos personales. Soy constante
+           y me gusta aprender y estar actualizado de las ultimas mejoras que se brindan en el campo de la tecnologia.
+        </p>
+      </div>
+    </section>
+
     <div class="educacion">
-    <h2>Educacion</h2>
-      
+      <h2>Educacion</h2>
 
       <div id="modal" class="modal-window">
         <div>
           <h2>INGENIERIA EN INFORMATICA</h2>
           <p>INGENIERIA DE SOFTWARE</p>
-          <a href="#" class="close-modal"><i class="fa fa-times" style="color: white"></i></a>
+          <a href="#" class="close-modal"
+            ><i class="fa fa-times" style="color: white"></i
+          ></a>
         </div>
       </div>
       <ul class="eduul">
@@ -114,7 +227,7 @@
           <div class="rainbow">
             <h3>SECUNDARIO</h3>
             <h2>PERITO MERCANTIL</h2>
-            <hr>
+            <hr />
 
             <h4>EEMPI 8069</h4>
             <h4>2003 - 2008</h4>
@@ -134,14 +247,15 @@
                   FISICA 1, FISICA 2, CALCULO MATEMATICO, ELECTRONICA DIGITAL,
                   ALGORITMOS Y ESTRUCTURAS DE DATOS , INGENIERIA DE SOFTWARE
                 </h5>
-                <a href="#" class="close-modal"> <i class="fa fa-times" style="color: rgb(255, 0, 0)"></i></a>
+                <a href="#" class="close-modal">
+                  <i class="fa fa-times" style="color: rgb(255, 0, 0)"></i
+                ></a>
               </div>
             </div>
-            <hr>
+            <hr />
             <h4>UNL FICH</h4>
             <h4>2009 - INCOMPLETO</h4>
           </div>
-        
         </li>
 
         <li class="eduli">
@@ -159,11 +273,13 @@
                   proyectos y se trabajaron herramientas como #selenium ,
                   #jmeter y #postman .
                 </h5>
-                <a href="#" class="close-modal"><i class="fa fa-times" style="color: rgb(255, 0, 0)"></i></a>
+                <a href="#" class="close-modal"
+                  ><i class="fa fa-times" style="color: rgb(255, 0, 0)"></i
+                ></a>
               </div>
             </div>
-            <hr>
-            
+            <hr />
+
             <h4>MINDHUB</h4>
             <h4>2023</h4>
           </div>
@@ -183,10 +299,12 @@
                   fortalecieron aquellos relacionados a base de datos con #mysql
                   y #angular en #frontend .
                 </h5>
-                <a href="#" class="close-modal"><i class="fa fa-times" style="color: rgb(255, 0, 0)"></i></a>
+                <a href="#" class="close-modal"
+                  ><i class="fa fa-times" style="color: rgb(255, 0, 0)"></i
+                ></a>
               </div>
             </div>
-            <hr>
+            <hr />
             <h4>ARGENTINA PROGRAMA</h4>
             <h4>2022</h4>
           </div>
@@ -245,25 +363,27 @@
         <h3>OFFICE</h3>
       </ul>
     </div>
-    <h1>Formulario de Contacto</h1>
-    <form id="contact-form" method="post" action="#">
-      <div class="form-group">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required />
-        <div class="error-msg" id="name-error"></div>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <div class="error-msg" id="email-error"></div>
-      </div>
-      <div class="form-group">
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea>
-        <div class="error-msg" id="message-error"></div>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
+    <div class="contacto">
+      <h1>Formulario de Contacto</h1>
+      <form id="contact-form" method="post" action="#">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+          <div class="error-msg" id="name-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error-msg" id="email-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+          <div class="error-msg" id="message-error"></div>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
 
     <script src="script.js"></script>
   </body>
