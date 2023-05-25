@@ -1,6 +1,7 @@
 * {
   background-color: rgb(0, 0, 0);
   color: #fff;
+  
 }
 .nav {
   background-color: rgb(0, 0, 0);
@@ -150,6 +151,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .eduli {
@@ -310,7 +312,7 @@ margin-bottom: 20px;
   font-weight: bold;
 }
 
-/* Formulario */
+/* Formulario contacto */
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -356,38 +358,47 @@ button[type="submit"]:hover {
   margin-top: 5px;
 }
 /*
- 
+ */
+.proyectos ul {
+  flex-direction: column;
+  
+  flex-wrap:wrap;
+  justify-content: center;
 
-.modal-window > div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 2em;
-  background: rgb(126, 33, 33);
+  
+
+  list-style: none; /* Quitar los marcadores de la lista */
 }
-.modal-window header {
+
+.proyectos li {
+  margin: 10px; 
+  padding: 10px; 
+  border-radius: 10px; 
+  box-shadow: 2px 2px 5px orange; /* Dar un efecto de sombra a los elementos */
+}
+
+.proyectos span {
   font-weight: bold;
-}
-.modal-window h1 {
-  font-size: 150%;
-  margin: 0 0 15px;
+ 
 }
 
-.modal-close :hover {
-  color: black;
-}
-a {
-  color: inherit;
-}
-
-.modal-window > div {
-  border-radius: 1rem;
+.proyectos div {
+  display: none; /* Ocultar contenido */
+  color: white; /* Dar un color blanco al texto del detalle */
+  position:relative;
+  padding: 5px; /* Añadir un relleno dentro del detalle */
 }
 
-.btn {
-  background-color: white;
-  padding: 1em 1.5em;
-  border-radius: 0.5rem;
-  text-decoration: none;
-} */
+.proyectos li:hover div {
+  display: block;
+}
+.proyectos li:hover{
+ /*
+  transform-origin: top left;
+  transform: scale(1.5); 
+  */
+}
+
+
+
+

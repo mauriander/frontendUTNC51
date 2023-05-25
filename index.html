@@ -38,7 +38,7 @@
             <a style="text-decoration-line: none" href="#educacion">
               <a style="color: white"
                 ><ul style="text-align: center">
-                  <i class="fas fa-user-graduate"></i>
+                  <i style="color: orange" class="fas fa-user-graduate"></i>
                 </ul>
                 <ul>
                   Educacion
@@ -50,7 +50,7 @@
             <a style="text-decoration-line: none" href="#skill">
               <a style="color: white"
                 ><ul style="text-align: center">
-                  <i class="fas fa-code"></i>
+                  <i style="color: orange" class="fas fa-code"></i>
                 </ul>
                 <ul>
                   Skills
@@ -62,7 +62,7 @@
             <a style="text-decoration-line: none" href="#projects">
               <a style="color: white"
                 ><ul style="text-align: center">
-                  <i class="fas fa-laptop-code"></i>
+                  <i style="color: orange" class="fas fa-laptop-code"></i>
                 </ul>
                 <ul>
                   Proyectos
@@ -74,7 +74,7 @@
             <a style="text-decoration-line: none" href="#contactme">
               <a style="color: white"
                 ><ul style="text-align: center">
-                  <i class="far fa-address-book"></i>
+                  <i style="color: orange" class="far fa-address-book"></i>
                 </ul>
                 <ul>
                   Contacto
@@ -177,8 +177,6 @@
   </header>
 
   <body>
-    
-
     <!-- <div class="acerdace">
       <h2>Sobre mi</h2>
       <hr />
@@ -188,31 +186,33 @@
       <h3>Apasionado a la tecnologia</h3>
     </div> -->
 
-    <section id="about-me">
-    
-      <h2 style="padding-top: 70px;text-align: left;">Sobre mi</h2>
+    <section id="about-me" style="padding: 32px">
+      <h2 style="padding-top: 70px; text-align: left">Sobre mi</h2>
       <h1>ANDERMATTEN MAURICIO</h1>
       <div class="about-content">
         <img src="img/imagenperfil.jpg" alt="Profile Picture" />
         <p>
-          Hola, mi nombre es Mauricio Andermatten, un desarrolador JR que se situa en Santa fe,
-         Argentina. Soy un apasianado a la tecnologia y tengo 2 años de experiencia en lo que respecta 
-          a frontend con distintos cursos que lo avalan.
+          Hola, mi nombre es Mauricio Andermatten, soy un desarrolador FULLSTACK
+          JR y QA TESTER JR que se situa en Santa fe, Argentina. Soy un
+          apasianado a la tecnologia y tengo 2 años de experiencia en lo que
+          respecta a frontend con distintos cursos que lo avalan.
         </p>
         <p>
-          Estoy haciendo especializaciones en backend y he trabajado en un par de proyectos
-          Disfruto mucho de la innovacion y ampliando mis conocimientos frontend.
+          Estoy en constante aprendizaje especializaciones en lo relacionado al
+          desarrollo backend. He trabajado en un par de proyectos disfruto mucho
+          de la innovacion y ampliando mis conocimientos frontend.
         </p>
         <p>
-          En el tiempo libre me gusta mucho codear para proyectos personales. Soy constante
-           y me gusta aprender y estar actualizado de las ultimas mejoras que se brindan en el campo de la tecnologia.
+          En el tiempo libre me gusta codear para proyectos personales. Soy
+          constante, me gusta aprender y estar actualizado de las ultimas
+          mejoras que se brindan en el campo de la tecnologia.
         </p>
       </div>
     </section>
 
-    <div class="educacion">
+    <div class="educacion" style="padding: 32px">
       <h2>Educacion</h2>
-
+      <!-- 
       <div id="modal" class="modal-window">
         <div>
           <h2>INGENIERIA EN INFORMATICA</h2>
@@ -221,14 +221,13 @@
             ><i class="fa fa-times" style="color: white"></i
           ></a>
         </div>
-      </div>
+      </div> -->
       <ul class="eduul">
         <li class="eduli">
           <div class="rainbow">
             <h3>SECUNDARIO</h3>
             <h2>PERITO MERCANTIL</h2>
             <hr />
-
             <h4>EEMPI 8069</h4>
             <h4>2003 - 2008</h4>
           </div>
@@ -238,8 +237,13 @@
           <div class="rainbow">
             <h3>UNIVERSITARIO</h3>
             <h2>INGENIERIA EN INFORMATICA</h2>
-            <a href="#modal1" class="open-modal">AMPLIAR</a>
-
+            <button
+              onclick="window.location.href='#modal1'"
+              class="open-modal"
+              style="background: orange; border: none; border-radius: 2px"
+            >
+              VER MAS
+            </button>
             <div id="modal1" class="modal-window">
               <div class="modal-content">
                 <h2>INGENIERIA EN INFORMATICA</h2>
@@ -262,7 +266,13 @@
           <div class="rainbow">
             <h3>BOOTCAMP</h3>
             <h2>QA TESTER JR.</h2>
-            <a href="#modal2" class="open-modal">AMPLIAR</a>
+            <button
+              onclick="window.location.href='#modal2'"
+              class="open-modal"
+              style="background: orange; border: none; border-radius: 2px"
+            >
+              VER MAS
+            </button>
 
             <div id="modal2" class="modal-window">
               <div class="modal-content">
@@ -279,16 +289,22 @@
               </div>
             </div>
             <hr />
-
             <h4>MINDHUB</h4>
             <h4>2023</h4>
           </div>
         </li>
+
         <li class="eduli">
           <div class="rainbow">
             <h3>CURSO</h3>
             <h2>FULLSTACK JR</h2>
-            <a href="#modal3" class="open-modal">AMPLIAR</a>
+            <button
+              onclick="window.location.href='#modal3'"
+              class="open-modal"
+              style="background: orange; border: none; border-radius: 2px"
+            >
+              VER MAS
+            </button>
 
             <div id="modal3" class="modal-window">
               <div class="modal-content">
@@ -310,11 +326,12 @@
           </div>
         </li>
       </ul>
+      <p>Parrago y blanco</p>
     </div>
 
     <div class="experiencia">
       <h2>Experiencia</h2>
-      <hr />
+
       <ul>
         <li>
           <h3>RIO SALADO SRL</h3>
@@ -327,7 +344,74 @@
       </ul>
     </div>
 
-    <br />
+    <div class="proyectos" id="proyectos">
+      <h2>Proyectos</h2>
+
+      <ul>
+        <li>
+          <span>API Portfolio</span>
+          <p>
+            <a href="https://github.com/mauriander/portfolioprueba.git"
+              >Frontend</a
+            ><a>  - </a>
+          
+          <a href="https://github.com/mauriander/backend.git"> Backend</a></p>
+          <p>Las tecnologias utilizadas para el Backend JAVA, en cuanto al Frontend Typescript</p>
+
+          <div>
+            <hr />
+            En esta API se desarrollo un portfolio web para mostrar la
+            educacion, la experiencia, los proyectos y las habilidades. Se
+            trabajo con Base de datos, se realizo un desarrollo frotend y
+            backend.
+          </div>
+        </li>
+        <li>
+          <span>Elemento 2</span>
+
+          <div>
+            <hr />
+            Detalle naranja 2
+          </div>
+        </li>
+        <li>
+          <span>Entrenamiento 2.0</span>
+          <p>Las tecnologias utilizada en este proyecto fue C++, donde se complemento con WXFormBuilder y GNUPLOT</p>
+
+          <div>
+            <hr />
+            En esta aplicacion es una herramienta diseñada para ayudar a las
+            personas a monitorear y gestionar el consumo calorías. Su objetivo
+            principal es proporcionar a los usuarios una forma fácil y
+            conveniente de realizar un seguimiento de su actividad diaria, así
+            como calcular y controlar su consumo calórico. Permite al usuario de
+            acuerdo a la actividad que realizo y el tiempo que le demando
+            brindarle el calculo de calorias que ha quemado. Entrenamiento 2.0
+            es una aplicacion que se desarrolo en conjunto con 2 desarroladores
+            mas.
+          </div>
+        </li>
+        <li>
+          <span>Proyecto - Campo</span>
+          <p>
+            <a href="https://github.com/mauriander/Proyecto-Campo.git"
+              >Proyecto Campo</a
+            >
+          </p>
+          <p>Las tecnologias utilizada en este proyecto fue C++, donde se complemento con WXFormBuilder </p>
+
+          <div>
+            <hr />
+            Este proyecto se desarrollo para un control de animales de una
+            cabaña donde se puede almacenar el historial de los animales.Donde
+            se registran eventos como Revisiones de toros, Celos, Servicios,
+            Tacto, Destete, Secado, Parto Vacunacion
+            (aftosa,mancha,brucelosis,antiparasitos,vibrosis,piojos)
+          </div>
+        </li>
+      </ul>
+    </div>
+
     <div class="skills">
       <h2>Habilidades</h2>
       <hr />
@@ -350,7 +434,6 @@
       </ul>
     </div>
 
-    <br />
     <div class="softskills">
       <h2>Habilidades Secundarias</h2>
       <hr />

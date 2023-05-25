@@ -62,3 +62,29 @@ window.addEventListener("resize", checkWindowSize);
 
 // Verificar el tamaño de la ventana al cargar la página
 checkWindowSize();
+
+
+// Js proyectos
+// Ejemplo de JavaScript de la lista
+// Seleccionar todos los elementos <li> de la lista
+let items = document.querySelectorAll("li");
+
+// Recorrer cada elemento
+for (let item of items) {
+  
+  // Añadir un evento de tipo click al elemento
+  item.addEventListener("click", function() {
+    
+    // Alternar entre añadir y quitar una clase de CSS al detalle naranja
+    item.querySelector("div").classList.toggle("active");
+    
+    // La clase active cambia el color del fondo a rojo y el tamaño a más grande
+    /*
+    .active {
+      background-color: red;
+      transform: scale(1.5);
+    }
+    */
+
+  });
+}
