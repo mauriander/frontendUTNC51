@@ -3,6 +3,11 @@
   color: #fff;
   
 }
+body {
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+}
 .nav {
   background-color: rgb(0, 0, 0);
   color: #fff;
@@ -358,6 +363,7 @@ button[type="submit"]:hover {
   margin-top: 5px;
 }
 /*
+Lista proyectos
  */
 .proyectos ul {
   flex-direction: column;
@@ -392,12 +398,288 @@ button[type="submit"]:hover {
 .proyectos li:hover div {
   display: block;
 }
-.proyectos li:hover{
+
  /*
-  transform-origin: top left;
-  transform: scale(1.5); 
-  */
+ Carrousel skill
+  */  
+  /*
+   .carousel {
+    position: relative;
+    
+    height: 100vh;
+    overflow: hidden;
+ 
+    pointer-events: none;
+
+  }
+  
+  .carousel-item {
+    --items: 10;
+    --width: clamp(150px, 30vw, 300px);
+    --height: clamp(200px, 40vw, 400px);
+    --x: calc(var(--active) * 800%);
+    --y: calc(var(--active) * 200%);
+    --rot: calc(var(--active) * 120deg);
+    --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
+    overflow: hidden;
+    position: absolute;
+    z-index: var(--zIndex);
+    width: var(--width);
+    height: var(--height);
+    margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    user-select: none;
+    transform-origin: 0% 100%;
+    box-shadow: 0 10px 50px 10px rgba(0, 0, 0, .5);
+    background: black;
+    pointer-events: all;
+    transform: translate(var(--x), var(--y)) rotate(var(--rot));
+    transition: transform .8s cubic-bezier(0, 0.02, 0, 1);
+  }
+ 
+  .carousel-item .carousel-box {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .8s cubic-bezier(0, 0.02, 0, 1);
+
+    font-family: 'Orelo-sw-db', serif;
+  }
+   
+  .carousel-item .carousel-box:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5));
+  }
+  
+  .carousel-item .title {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    bottom: 20px;
+    left: 20px;
+    transition: opacity .8s cubic-bezier(0, 0.02, 0, 1);
+    font-size: clamp(20px, 3vw, 30px);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+  }
+  
+  .carousel-item .num {
+    position: absolute;
+    z-index: -1;
+    color: #fff;
+    top: 10px;
+    left: 20px;
+    transition: opacity .8s cubic-bezier(0, 0.02, 0, 1);
+    font-size: clamp(20px, 10vw, 80px);
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  
+ 
+ 
+  
+  
+/*22222222222222222222222222222222222222222222222222222222*/
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
 }
+
+.carousel-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  
+  --items: 10;
+  --width: clamp(150px, 30vw, 300px);
+  --height: clamp(200px, 40vw, 400px);
+  --x: calc(var(--active) * 800%);
+  --y: calc(var(--active) * 200%);
+  --rot: calc(var(--active) * 120deg);
+  --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
+  overflow: hidden;
+  position: absolute;
+  z-index: var(--zIndex);
+  width: var(--width);
+  height: var(--height);
+  margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  user-select: none;
+  transform-origin: 0% 100%;
+  box-shadow: 0 10px 50px 10px rgba(0, 0, 0, .5);
+ 
+  pointer-events: all;
+  transform: translate(var(--x), var(--y)) rotate(var(--rot));
+  transition: transform .8s cubic-bezier(0, 0.02, 0, 1);
+}
+
+.carousel-item .carousel-box {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .8s cubic-bezier(0, 0.02, 0, 1);
+
+  font-family: 'Orelo-sw-db', serif;
+  
+}
+ 
+.carousel-item .carousel-box:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5));
+}
+.carousel-item .meter {
+  position: relative;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+meter::-webkit-meter-optimum-value {
+  background-color: #4caf50;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+meter::-moz-meter-bar {
+  background-color: #00ff08;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  display: inline-block;
+  background-color: #000000;
+
+}
+.carousel-item .title {
+  position:absolute;
+  width: 100%;
+  height: 40px;
+  left: 50%;/*medio*/
+  bottom: 20px;/*pongo 20 porque el skillbar es 30*/
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  background-color: transparent;
+  text-align: center;
+   background-color:gray;
+   transition: opacity .8s cubic-bezier(0, 0.02, 0, 1);
+  font-size: clamp(20px, 3vw, 30px);
+
+
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+.carousel-item .skill-bar {
+  width: 100%;
+  height: 50px;
+  background-color: #f2f2f2;
+ 
+}
+
+.carousel-item .skill {
+  height: 100%;
+
+  background-color:greenyellow; 
+  transition: width 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bar .progress-text {
+  position:absolute;
+  left: 50%;/*medio*/
+  top: 25px;/*pongo 15 porque el skillbar es 30*/
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: transparent;
+  animation: fadeIn 10s ease-in-out forwards;
+}  
+ 
+@keyframes fillProgress {
+  0% {
+    width: 0%;
+  }
+}
+
+.skill-bar .skill {
+  height: 100%;
+
+  background-color:greenyellow; 
+  animation: fillProgress 10s ease-in-out forwards;
+}
+  
 
 
 
