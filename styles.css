@@ -313,6 +313,92 @@ h2 {
   font-weight: bold;
 }
 
+/*card Experiencia*/
+
+
+.container{
+  width: 1000px;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.container .card{
+  position: relative;
+  cursor: pointer;
+  margin: 32px;
+  padding: 10px;   
+}
+
+.container .card .face{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+  background: transparent;
+}
+
+.container .card .face.face1{
+  position: relative;
+  background: #ffffff;/*Fondo blanco para que se puedan ver los logos que poseen negros y naranjas(justo los mismos colores que elegui)*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  
+}
+
+.container .card:hover .face.face1{
+  background: transparent;
+  transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+  opacity: 0.6;/*Cuando no me posiciono que se vea al 60%*/
+  transition: 0.5s;
+  background: transparent;/*Todo transparente para que no se noten detalles*/
+  
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;/*Cuando me posiciono que se vea al 100%*/
+}
+
+.container .card .face.face1 .content img{
+  max-width: 100%;
+  max-height: 100%;
+  background: transparent;/*Todo transparente para que no se noten detalles*/    
+  justify-content: center;
+}
+
+.container .card .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: orange;
+  text-decoration: double;
+  background: transparent;/*Todo transparente para que no se noten detalles*/
+  text-align: center;
+  font-size: 2em;
+}
+.container .card .face.face2 .content p{
+  margin-top: 25%; /* Para que no quede muy pegado al texto*/
+  padding: 0;
+  text-align: center;  
+  background: transparent;/*Todo transparente para que no se noten detalles*/
+  font-weight: bold;  
+  justify-content:75%;
+}
+
+
+
+
+
+
+
+
 /* Formulario contacto */
 form {
   max-width: 400px;
@@ -379,10 +465,10 @@ Lista proyectos
 }
 
 .proyectos li {
-  margin: 10px;
+  margin: 32px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px orange; /* Dar un efecto de sombra a los elementos */
+  box-shadow: 5px 5px 8px orange; /* Dar un efecto de sombra a los elementos */
 }
 
 .proyectos span {
