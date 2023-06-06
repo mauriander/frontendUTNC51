@@ -1,22 +1,20 @@
-Agregamos readme, luego agregaremos descripcion
 Portfolio Web
 
 Este proyecto consiste en mi portfolio personal, donde comparto información sobre mí, mis habilidades, experiencia y proyectos. El objetivo de este portfolio es mostrar mi experiencia y conocimientos en el campo de desarrollo web.
 
-Características
-Diseño
+Diseño:
 Secciones que destacan mis habilidades, experiencia y proyectos.
 Enlaces a mis perfiles en redes sociales.
 Formulario de contacto para facilitar la comunicación.
 
-Capturas de pantalla
+
 A continuación, se muestra una captura de pantalla de mi portfolio web:
 
 
 ![Alt text](img/Screenshot%202023-05-26%20at%2000-19-16%20Mauricio%20Andermatten.png)
 
 
-Tecnologías utilizadas
+Tecnologías utilizadas:
 HTML5
 CSS3
 JavaScript
@@ -31,7 +29,7 @@ Explora las diferentes secciones del portfolio para conocer más sobre mí y mis
 Utiliza el formulario de contacto para enviarme un mensaje.
 
 
-Contacto
+Contacto:
 Si deseas comunicarte conmigo, puedes hacerlo a través de los siguientes medios:
 Email: andermattenmauricio@gmail.com
 LinkedIn: https://www.linkedin.com/in/mauricio-andermatten-a1b715bb/

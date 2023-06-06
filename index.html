@@ -37,7 +37,7 @@
           <li class="menuli">
             <a
               style="color: white; text-decoration-line: none"
-              href="#educacion"
+              href="/pages/educacion.html"
               ><ul style="text-align: center">
                 <i style="color: orange" class="fas fa-user-graduate"></i>
               </ul>
@@ -47,7 +47,9 @@
             >
           </li>
           <li class="menuli">
-            <a style="color: white; text-decoration-line: none" href="#skill"
+            <a
+              style="color: white; text-decoration-line: none"
+              href="/pages/skill.html"
               ><ul style="text-align: center">
                 <i style="color: orange" class="fas fa-code" href="#skill"></i>
               </ul>
@@ -59,7 +61,7 @@
           <li class="menuli">
             <a
               style="color: white; text-decoration-line: none"
-              href="#proyectos"
+              href="/pages/proyectos.html"
             >
               <ul style="text-align: center">
                 <i style="color: orange" class="fas fa-laptop-code"></i>
@@ -72,7 +74,7 @@
           <li class="menuli">
             <a
               style="color: white; text-decoration-line: none"
-              href="#contactame"
+              href="/pages/contacto.html"
             >
               <ul style="text-align: center">
                 <i style="color: orange" class="far fa-address-book"></i>
@@ -85,7 +87,7 @@
         </ul>
       </div>
 
-      <section class="menuw">
+      <section class="menuw" >
         <!-- Menú (wrapper) -->
         <div id="menuWrapper" class="menu-wrapper" style="text-align: center">
           <button id="menuToggle" class="menu-toggle">
@@ -94,9 +96,9 @@
           <div id="wrapperMenu" class="menu">
             <ul>
               <li class="menuli">
-                <a style="text-decoration-line: none" href="#educacion">
+                <a style="text-decoration-line: none"  href="/pages/educacion.html">
                   <ul style="text-align: center">
-                    <i class="fas fa-user-graduate"></i>
+                    <i style="color: orange" class="fas fa-user-graduate"></i>
                   </ul>
                   <ul>
                     Educacion
@@ -104,9 +106,9 @@
                 >
               </li>
               <li class="menuli">
-                <a style="text-decoration-line: none" href="#skill">
+                <a style="text-decoration-line: none"  href="/pages/skill.html">
                   <ul style="text-align: center">
-                    <i class="fas fa-code"></i>
+                    <i style="color: orange" class="fas fa-code"></i>
                   </ul>
                   <ul>
                     Hard Skill
@@ -114,9 +116,9 @@
                 >
               </li>
               <li class="menuli">
-                <a style="text-decoration-line: none" href="#proyectos">
+                <a style="text-decoration-line: none"  href="/pages/proyectos.html">
                   <ul style="text-align: center">
-                    <i class="fas fa-laptop-code"></i>
+                    <i style="color: orange" class="fas fa-laptop-code"></i>
                   </ul>
                   <ul>
                     Proyectos
@@ -124,9 +126,12 @@
                 >
               </li>
               <li class="menuli">
-                <a style="text-decoration-line: none" href="#contactame">
+                <a
+                  style="text-decoration-line: none"
+                  href="/pages/contacto.html"
+                >
                   <ul style="text-align: center">
-                    <i class="far fa-address-book"></i>
+                    <i style="color: orange" class="far fa-address-book"></i>
                   </ul>
                   <ul>
                     Contacto
@@ -169,15 +174,13 @@
   </header>
 
   <body>
-    <!-- <div class="acerdace">
-      <h2>Sobre mi</h2>
-      <hr />
-      <h3>andermattenmauricio@gmail.com</h3>
-      <p>27/05/1991</p>
-      <h3>Santa fe - Argentina</h3>
-      <h3>Apasionado a la tecnologia</h3>
-    </div> -->
+    <div id="video-background">
+      <video id="video-fondo" autoplay muted>
+        <source src="/img/videofondo18.mp4" type="video/mp4" />
+      </video>
+    </div>
 
+    <!-- SOBRE MI -->
     <section id="about-me" style="padding: 32px">
       <h2 style="padding-top: 70px; text-align: left">Sobre mi</h2>
       <h1>ANDERMATTEN MAURICIO</h1>
@@ -190,9 +193,9 @@
           respecta a frontend con distintos cursos que lo avalan.
         </p>
         <p>
-          Estoy en constante aprendizaje haciendo especializaciones en lo relacionado al
-          desarrollo backend. He trabajado en un par de proyectos y puedo decir que disfruto mucho
-          de la innovacion.
+          Estoy en constante aprendizaje haciendo especializaciones en lo
+          relacionado al desarrollo backend. He trabajado en un par de proyectos
+          y puedo decir que disfruto mucho de la innovacion.
         </p>
         <p>
           En el tiempo libre me gusta codear para proyectos personales. Soy
@@ -202,514 +205,76 @@
       </div>
     </section>
 
-    <div class="educacion" style="padding: 32px" id="educacion">
-      <h2>Educacion</h2>
-      <!-- 
-      <div id="modal" class="modal-window">
-        <div>
-          <h2>INGENIERIA EN INFORMATICA</h2>
-          <p>INGENIERIA DE SOFTWARE</p>
-          <a href="#" class="close-modal"
-            ><i class="fa fa-times" style="color: white"></i
-          ></a>
-        </div>
-      </div> -->
-      <ul class="eduul">
-        <li class="eduli">
-          <div class="rainbow">
-            <h3>SECUNDARIO</h3>
-            <h2>PERITO MERCANTIL</h2>
-            <hr />
-            <h4>EEMPI 8069</h4>
-            <h4>2003 - 2008</h4>
-          </div>
-        </li>
-
-        <li class="eduli">
-          <div class="rainbow">
-            <h3>UNIVERSITARIO</h3>
-            <h2>INGENIERIA EN INFORMATICA</h2>
-            <button
-              onclick="window.location.href='#modal1'"
-              class="open-modal"
-              style="background: orange; border: none; border-radius: 2px"
-            >
-              VER MAS
-            </button>
-            <div id="modal1" class="modal-window">
-              <div class="modal-content">
-                <h2>INGENIERIA EN INFORMATICA</h2>
-                <h5>
-                  FISICA 1, FISICA 2, CALCULO MATEMATICO, ELECTRONICA DIGITAL,
-                  ALGORITMOS Y ESTRUCTURAS DE DATOS , INGENIERIA DE SOFTWARE
-                </h5>
-                <a href="#" class="close-modal">
-                  <i class="fa fa-times" style="color: rgb(255, 0, 0)"></i
-                ></a>
-              </div>
-            </div>
-            <hr />
-            <h4>UNL FICH</h4>
-            <h4>2009 - INCOMPLETO</h4>
-          </div>
-        </li>
-
-        <li class="eduli">
-          <div class="rainbow">
-            <h3>BOOTCAMP</h3>
-            <h2>QA TESTER JR.</h2>
-            <button
-              onclick="window.location.href='#modal2'"
-              class="open-modal"
-              style="background: orange; border: none; border-radius: 2px"
-            >
-              VER MAS
-            </button>
-
-            <div id="modal2" class="modal-window">
-              <div class="modal-content">
-                <h2>QA TESTER JR</h2>
-                <h5>
-                  Fue una capacitación muy completa donde se trabajó con
-                  metodologías #agile , se utilizo #jira para la gestión de
-                  proyectos y se trabajaron herramientas como #selenium ,
-                  #jmeter y #postman .
-                </h5>
-                <a href="#" class="close-modal"
-                  ><i class="fa fa-times" style="color: rgb(255, 0, 0)"></i
-                ></a>
-              </div>
-            </div>
-            <hr />
-            <h4>MINDHUB</h4>
-            <h4>2023</h4>
-          </div>
-        </li>
-
-        <li class="eduli">
-          <div class="rainbow">
-            <h3>CURSO</h3>
-            <h2>FULLSTACK JR</h2>
-            <button
-              onclick="window.location.href='#modal3'"
-              class="open-modal"
-              style="background: orange; border: none; border-radius: 2px"
-            >
-              VER MAS
-            </button>
-
-            <div id="modal3" class="modal-window">
-              <div class="modal-content">
-                <h2>FULLSTACK JR</h2>
-                <h5>
-                  La experiencia fue muy valiosa. En el #backend se ampliaron
-                  conocimientos de #springboot para la creación de la API y se
-                  fortalecieron aquellos relacionados a base de datos con #mysql
-                  y #angular en #frontend .
-                </h5>
-                <a href="#" class="close-modal"
-                  ><i class="fa fa-times" style="color: rgb(255, 0, 0)"></i
-                ></a>
-              </div>
-            </div>
-            <hr />
-            <h4>ARGENTINA PROGRAMA</h4>
-            <h4>2022</h4>
-          </div>
-        </li>
-
-        <li class="eduli">
-          <div class="rainbow">
-            <h3>CURSO</h3>
-            <h2>FRONTEND</h2>
-            <button
-              onclick="window.location.href='#modal4'"
-              class="open-modal"
-              style="background: orange; border: none; border-radius: 2px"
-            >
-              VER MAS
-            </button>
-
-            <div id="modal4" class="modal-window">
-              <div class="modal-content">
-                <h2>FRONTEND</h2>
-                <h5>
-                  Tuve la suerte de coincidir con un gran mentor dedicado.Donde aprendimos mucho 
-                  sobre #boostrap #html #css y dimos un paso ligero por #javascript                  
-                </h5>
-                <a href="#" class="close-modal"
-                  ><i class="fa fa-times" style="color: rgb(255, 0, 0)"></i
-                ></a>
-              </div>
-            </div>
-            <hr />
-            <h4>BA MULTIPLICA - UTN UBA</h4>
-            <h4>2023</h4>
-          </div>
-        </li>
-      </ul>
-    </div>
-    
+    <!-- EXPERIENCIA -->
     <div class="experiencia" style="padding: 32px">
       <h2>Experiencia</h2>
       <div class="container">
         <div class="card">
-            <div class="face face1">
-                <div class="content">
-                  <img src="/img/Riosalado.png" alt="Experiencia 1" />
-                    <h3>RIO SALADO SRL</h3>
-                </div>
+          <div class="face face1">
+            <div class="content">
+              <img src="/img/Riosalado.png" alt="Experiencia 1" />
+              <h3>RIO SALADO SRL</h3>
             </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>ADMINISTRATIVO</p>
-                        
-                </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>ADMINISTRATIVO</p>
             </div>
+          </div>
         </div>
         <div class="card">
           <div class="face face1">
-              <div class="content">
-                <img src="/img/megasoft-260.png" alt="Experiencia 2" />
-                  <h3>MEGASOFT SA</h3>
-              </div>
+            <div class="content">
+              <img src="/img/megasoft-260.png" alt="Experiencia 2" />
+              <h3>MEGASOFT SA</h3>
+            </div>
           </div>
           <div class="face face2">
-              <div class="content">
-                  <p>SOPORTE</p>
-                      
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
-
-    <div class="proyectos" id="proyectos" style="padding: 32px">
-      <h2>Proyectos</h2>
-
-      <ul>
-        <li>
-          <span>API Portfolio</span>
-          <p>
-            <a href="https://github.com/mauriander/portfolioprueba.git"
-              >Frontend</a
-            ><a> - </a>
-
-            <a href="https://github.com/mauriander/backend.git"> Backend</a><a> - </a>
-            <a href="https://frontendargprogprueba.firebaseapp.com/iniciar-sesion"> Sitio web</a>
-          </p>
-          <p>
-            Las tecnologias utilizadas para el Backend JAVA, en cuanto al
-            Frontend Typescript
-          </p>
-
-          <div>
-            <hr />
-            En esta API se desarrollo un portfolio web para mostrar la
-            educacion, la experiencia, los proyectos y las habilidades. Se
-            trabajo con Base de datos, se realizo un desarrollo frotend y
-            backend. Framework:Springboot Lenguajes:JAVA & JS DataBase: MySQL
-            API: Json Herramientas: VS Code, Github, JMETER, APIPostman
-          </div>
-        </li>
-
-        <li>
-          <span>API (En progreso)</span>
-          <p>
-            <a href="https://github.com/mauriander/frontend23046d1.git"
-              >API CODO A CODO</a
-            >
-          </p>
-          <p>
-            Las tecnologias que se utilizan para el Backend JAVA y MySQL, en
-            cuanto al Frontend JS, HTML & CSS
-          </p>
-
-          <div>
-            <hr />
-            Es una API que se encuenta en desarrollo. Al momento estamos
-            utilizando Framework:Springboot Lenguajes:JAVA & JS DataBase: MySQL
-            API: Json Herramientas: VS Code, Github.
-          </div>
-        </li>
-
-        <li>
-          <span>Portfolio WEB</span>
-          <p>
-            <a href="https://github.com/mauriander/frontendUTNC51.git"
-              >Frontend UTN</a
-            >
-          </p>
-          <p>Las tecnologias utilizadas en Frontend JAVASCRIPT , HTML Y CSS</p>
-
-          <div>
-            <hr />
-            En esta web se realizo la creacion de un portfolio personal para
-            mostrar la educacion, la experiencia, los proyectos y las
-            habilidades. Se se realizo un desarrollo frotend con lenguajes JAVA
-            & JS ademas se utilizaron herramientas como VS Code, Github, JMETER.
-          </div>
-        </li>
-
-        <li>
-          <span>Entrenamiento 2.0</span>
-          <p>
-            <a href="https://github.com/mauriander/Entrenamiento-2.0.git"
-              >Proyecto Campo</a
-            >
-          </p>
-          <p>
-            Las tecnologias utilizada en este proyecto fue C++, donde se
-            complemento con WXFormBuilder y GNUPLOT
-          </p>
-
-          <div>
-            <hr />
-            En esta aplicacion es una herramienta diseñada para ayudar a las
-            personas a monitorear y gestionar el consumo calorías. Su objetivo
-            principal es proporcionar a los usuarios una forma fácil y
-            conveniente de realizar un seguimiento de su actividad diaria, así
-            como calcular y controlar su consumo calórico. Permite al usuario de
-            acuerdo a la actividad que realizo y el tiempo que le demando
-            brindarle el calculo de calorias que ha quemado. Entrenamiento 2.0
-            es una aplicacion que se desarrolo en conjunto con 2 desarroladores
-            mas.
-          </div>
-        </li>
-        <li>
-          <span>Proyecto - Campo</span>
-          <p>
-            <a href="https://github.com/mauriander/Proyecto-Campo.git"
-              >Proyecto Campo</a
-            >
-          </p>
-          <p>
-            Las tecnologias utilizada en este proyecto fue C++, donde se
-            complemento con WXFormBuilder
-          </p>
-
-          <div>
-            <hr />
-            Este proyecto se desarrollo para un control de animales de una
-            cabaña donde se puede almacenar el historial de los animales.Donde
-            se registran eventos como Revisiones de toros, Celos, Servicios,
-            Tacto, Destete, Secado, Parto Vacunacion
-            (aftosa,mancha,brucelosis,antiparasitos,vibrosis,piojos)
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- <div class="skills">
-      <h2>Habilidades</h2>
-      <hr />
-      <ul>
-        <li>
-          <h3>BASE DE DATOS</h3>
-        </li>
-        <li>
-          <h3>C++</h3>
-        </li>
-        <li>
-          <h3>JAVA</h3>
-        </li>
-        <li>
-          <h3>API POSTMAN</h3>
-        </li>
-        <li>
-          <h3>SPRINGBOOT</h3>
-        </li>
-      </ul>
-    </div> -->
-
-    <div class="carousel" style="padding: 32px" id="skill">
-      <h2>Skills</h2>
-      <div class="carousel-inner">
-        <!-- Deje esta referencia porque me parece justo, dejar las fuentes -->
-        <!-- <a target="_blank" href="https://icons8.com">Icons8</a> -->
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">ANGULAR</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 70%"></div>
-              <span class="progress-text">70%</span>
+            <div class="content">
+              <p>SOPORTE</p>
             </div>
-            <img src="/img/angularjs-240.png" alt="Image 1" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">CLOUD AWS</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 90%"></div>
-              <span class="progress-text">90%</span>
-            </div>
-            <img src="/img/amazon-web-services-240.png" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">GITHUB</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 75%"></div>
-              <span class="progress-text">75%</span>
-            </div>
-            <img src="/img/github-384.png" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">HTML</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 75%"></div>
-              <span class="progress-text">75%</span>
-            </div>
-            <img src="/img/html5-240.png" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">CSS</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 85%"></div>
-              <span class="progress-text">85%</span>
-            </div>
-            <img src="/img/css-200.png" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">C++</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 85%"></div>
-              <span class="progress-text">85%</span>
-            </div>
-            <img src="/img/C++.png" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">JAVASCRIPT</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 60%"></div>
-              <span class="progress-text">60%</span>
-            </div>
-            <img src="/img/javascript-480.png" alt="Ima" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">JIRA</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 60%"></div>
-              <span class="progress-text">60%</span>
-            </div>
-            <img src="/img/jira-480.png" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">JMETER</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 60%"></div>
-              <span class="progress-text">60%</span>
-            </div>
-            <img src="/img/jmeter-96.png" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">MY SQL</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 60%"></div>
-              <span class="progress-text">60%</span>
-            </div>
-            <img src="/img/mysql-480.png" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">ITALIANO B2</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 60%"></div>
-              <span class="progress-text">60%</span>
-            </div>
-            <img src="/img/italianob2.jpg" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">NODE JS</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 60%"></div>
-              <span class="progress-text">60%</span>
-            </div>
-            <img src="/img/nodejs-240.png" alt="Image 2" />
-          </div>
-        </div>
-
-        <div class="carousel-item active">
-          <div class="carousel-box">
-            <div class="title">API POSTMAN</div>
-            <div class="skill-bar">
-              <div class="skill" style="width: 60%"></div>
-              <span class="progress-text">60%</span>
-            </div>
-            <img src="/img/postman-api-256.png" alt="Image 2" />
           </div>
         </div>
       </div>
     </div>
-    <!-- <a class="carousel-control prev" href="#"></a>
-  <a class="carousel-control next" href="#"></a> -->
 
-    <!-- <div class="softskills">
-      <h2>Habilidades Secundarias</h2>
-      <hr />
-      <ul>
-        <h3>JIRA</h3>
-        <h3>JMETER</h3>
-        <h3>MY SQL</h3>
-        <h3>INGLES B2</h3>
-        <h3>ITALIANO B2</h3>
-        <h3>OFFICE</h3>
-      </ul>
-    </div> -->
+    <!-- FOOTER    -->
 
-    <div class="contacto" style="padding: 32px" id="contactame">
-      <h2>Formulario de Contacto</h2>
-      <form id="contact-form" method="post" action="#">
-        <div class="form-group">
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required />
-          <div class="error-msg" id="name-error"></div>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <div class="error-msg" id="email-error"></div>
-        </div>
-        <div class="form-group">
-          <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" required></textarea>
-          <div class="error-msg" id="message-error"></div>
-        </div>
-        <button type="submit">Enviar</button>
+    <footer class="responsive-footer" style="padding-bottom: 0">
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="/index.html">Home</a>
+          |
+          <a href="/pages/contacto.html">Contacto</a>
+        </p>
+        <i class="fa fa-map-marker" style="text-align: center"></i>
+        <span>Esperanza - Santa fe</span>
+
+        <p></p>
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:maurianderit@gmail.com">maurianderit@gmail.com</a>
+        <p></p>
+      </div>
+
+
+      <div class="footer-center">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54462.38828221898!2d-60.91626765000001!3d-31.444440000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b51317d3f7f60d%3A0x46c7f74c379a35d1!2sEsperanza%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1685915532356!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-60.981416702270515%2C-31.468276756929235%2C-60.88562965393067%2C-31.42785749070308&amp;layer=mapnik" style="border: 1px solid black"></iframe>
        
-      </form>
-    </div>
+      </div>
+      <div class="footer-right" style="padding: 8px">
+        <div class="footer-icons">
+          <a href="https://github.com/mauriander/">
+            <i class="fab fa-github"></i>
+          </a>
+          <p></p>
+          <!-- lo hago para separa -->
+          <a href="https://www.linkedin.com/in/mauricio-andermatten-a1b715bb">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>

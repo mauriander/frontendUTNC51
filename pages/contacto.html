@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mauricio Andermatten</title>
+
+    <title>Mauricio Andermatten</title>
+    <meta name="description" content="Roughly 155 characters" />
+    <!-- Poner formitas a botones de editar y agregar, etc -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <!-- Nbootstramp-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    />
+    <!-- llamos a styles para que utilize los estilos que vo y a usar -->
+    <link rel="stylesheet" href="contacto.css" />
+  </head>
+  <header>
+    <nav class="nav">
+      <!-- reservo el ugar para poner el logo -->
+      <section class="logo">
+        <!-- <img class="pnglogo" src="" alt="" /> -->
+        <div class="saludo">Hello World!</div>
+      </section>
+
+      <div class="menu" id="menu">
+        <ul class="menuul">
+          <!-- <li class="menuli">
+            <a style="text-decoration-line: none" href="#header">
+              <a style="color: white">Quien Soy</a></a
+            >
+          </li> -->
+          <li class="menuli">
+            <a
+              style="color: white; text-decoration-line: none"
+              href="/pages/educacion.html"
+              ><ul style="text-align: center">
+                <i style="color: orange" class="fas fa-user-graduate"></i>
+              </ul>
+              <ul>
+                Educacion
+              </ul></a
+            >
+          </li>
+          <li class="menuli">
+            <a
+              style="color: white; text-decoration-line: none"
+              href="/pages/skill.html"
+              ><ul style="text-align: center">
+                <i style="color: orange" class="fas fa-code" href="#skill"></i>
+              </ul>
+              <ul>
+                Skills
+              </ul></a
+            >
+          </li>
+          <li class="menuli">
+            <a
+              style="color: white; text-decoration-line: none"
+              href="/pages/proyectos.html"
+            >
+              <ul style="text-align: center">
+                <i style="color: orange" class="fas fa-laptop-code"></i>
+              </ul>
+              <ul>
+                Proyectos
+              </ul></a
+            >
+          </li>
+          <li class="menuli">
+            <a
+              style="color: white; text-decoration-line: none"
+              href="/pages/contacto.html"
+            >
+              <ul style="text-align: center">
+                <i style="color: orange" class="far fa-address-book"></i>
+              </ul>
+              <ul>
+                Contacto
+              </ul></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <section class="menuw">
+        <!-- Menú (wrapper) -->
+        <div id="menuWrapper" class="menu-wrapper" style="text-align: center">
+          <button id="menuToggle" class="menu-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div id="wrapperMenu" class="menu">
+            <ul>
+              <li class="menuli">
+                <a style="text-decoration-line: none" href="#educacion">
+                  <ul style="text-align: center">
+                    <i class="fas fa-user-graduate"></i>
+                  </ul>
+                  <ul>
+                    Educacion
+                  </ul></a
+                >
+              </li>
+              <li class="menuli">
+                <a style="text-decoration-line: none" href="#skill">
+                  <ul style="text-align: center">
+                    <i class="fas fa-code"></i>
+                  </ul>
+                  <ul>
+                    Hard Skill
+                  </ul></a
+                >
+              </li>
+              <li class="menuli">
+                <a style="text-decoration-line: none" href="#proyectos">
+                  <ul style="text-align: center">
+                    <i class="fas fa-laptop-code"></i>
+                  </ul>
+                  <ul>
+                    Proyectos
+                  </ul></a
+                >
+              </li>
+              <li class="menuli">
+                <a
+                  style="text-decoration-line: none"
+                  href="/pages/contacto.html"
+                >
+                  <ul style="text-align: center">
+                    <i class="far fa-address-book"></i>
+                  </ul>
+                  <ul>
+                    Contacto
+                  </ul></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="socialmedia">
+        <ul class="socialmediaul">
+          <li class="socialmediali">
+            <a href="https://github.com/mauriander/">
+              <i class="fab fa-github" style="color: white"></i>
+            </a>
+          </li>
+          <li class="socialmediali">
+            <a href="https://www.freecodecamp.org/mauriander">
+              <i class="fab fa-free-code-camp" style="color: white"></i>
+            </a>
+          </li>
+          <li class="socialmediali">
+            <a href="https://www.linkedin.com/in/mauricio-andermatten-a1b715bb">
+              <i class="fab fa-linkedin" style="color: white"></i>
+            </a>
+          </li>
+          <!-- <li class="socialmediali">
+            <a href="https://www.instagram.com/mauriander/">
+              <i class="fab fa-instagram" style="color: white"></i>
+            </a>
+          </li> -->
+
+          <!-- 
+          <li class="socialmediali"></li> -->
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <body>
+    <div id="video-background">
+      <video autoplay loop muted>
+        <source src="/img/videofondo15.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div
+      class="contacto"
+      style="padding: 32px; padding-top: 112px"
+      id="contactame"
+    >
+      <h2>Formulario de Contacto</h2>
+      <form id="contact-form" method="post" action="#">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+          <div class="error-msg" id="name-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error-msg" id="email-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+          <div class="error-msg" id="message-error"></div>
+        </div>
+        <div style="padding-top: 32px">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <footer class="responsive-footer" style="padding-bottom: 0">
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="/index.html">Home</a>
+          |
+          <a href="/pages/contacto.html">Contacto</a>
+        </p>
+        <i class="fa fa-map-marker" style="text-align: center"></i>
+        <span>Esperanza - Santa fe</span>
+
+        <p></p>
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:maurianderit@gmail.com">maurianderit@gmail.com</a>
+        <p></p>
+      </div>
+
+      <div class="footer-center">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54462.38828221898!2d-60.91626765000001!3d-31.444440000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b51317d3f7f60d%3A0x46c7f74c379a35d1!2sEsperanza%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1685915532356!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-60.981416702270515%2C-31.468276756929235%2C-60.88562965393067%2C-31.42785749070308&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+         
+        </div>
+      </div>
+      <div class="footer-right" style="padding: 8px">
+        <div class="footer-icons">
+          <a href="https://github.com/mauriander/">
+            <i class="fab fa-github"></i>
+          </a>
+          <p></p>
+          <!-- lo hago para separa -->
+          <a href="https://www.linkedin.com/in/mauricio-andermatten-a1b715bb">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="contacto.js"></script>
+  </body>
+</html>
