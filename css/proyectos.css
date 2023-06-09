@@ -1,0 +1,86 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h2 {
+  background: linear-gradient(45deg, #68c2a0, #4d4866);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+/* CSS */
+:root {
+  --vh: 0; /* Valor inicial */
+}
+.proyectos{
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 50px auto;
+    perspective: 1000px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: skewY(-10deg) translateY(-20%);
+  }
+  
+  .card-content {
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    transform: skewY(-10deg) translateY(-20%);
+  }
+  
+  .card-title {
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  .card-text {
+    padding: 0 20px;
+  }
+  
+  .card-button {
+    display: block;
+    margin: auto;
+    padding: 10px;
+  }
+
+ 

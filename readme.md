@@ -1,12 +1,13 @@
 Portfolio Web
 
-Este proyecto consiste en mi portfolio personal, donde comparto información sobre mí, mis habilidades, experiencia y proyectos. El objetivo de este portfolio es mostrar mi experiencia y conocimientos en el campo de desarrollo web.
+Este proyecto consiste en un trabajo final de BA Multiplica 2.0 edicion 2023 que muestra mi portfolio personal, donde comparto información sobre mí, mis habilidades, experiencia y proyectos. El objetivo de este portfolio es mostrar mi experiencia y conocimientos en el campo de desarrollo web.
 
 Diseño:
 Secciones que destacan mis habilidades, experiencia y proyectos.
 Enlaces a mis perfiles en redes sociales.
 Formulario de contacto para facilitar la comunicación.
 
+(En cuanto al diseño grafico de la web se busco prescindir un poco de lo minimalista y se apunto a recargar un poco cada seccion)
 
 A continuación, se muestra una captura de pantalla de mi portfolio web:
 
