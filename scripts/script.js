@@ -11,7 +11,7 @@ function toggleMenu() {
 }
 
 function checkWindowSize() {
-  if (window.innerWidth < 1300) {
+  if (window.innerWidth < 1200) {
     menuWrapper.style.display = "block";
     menu.style.display = "none";
   } else {

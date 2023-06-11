@@ -36,10 +36,10 @@ h2 {
 }
 
 /* Formulario contacto */
-
+/* 
 .contacto{
   height: var(--screenHeight);
-}
+} */
 form {
   max-width: 75%;
   margin: 0 auto;
@@ -51,25 +51,25 @@ form {
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 label {
   display: block;
   font-weight: bold;
   color: #000000;
-  font-size: 24px;
+  font-size: 10px;
 }
 
 input,
 textarea {
   width: 100%;
   background-color: gray;
-  padding: 16px;
+  padding: 10px;
 
   border: 1px solid #000000;
   border-radius: 4px;
-  font-size: 24px;
+  font-size: 8px;
 
   color: #000;
 }
@@ -81,7 +81,7 @@ button[type="submit"] {
     rgba(251, 75, 2, 1) 100%
   );
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -91,7 +91,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   color: rgb(0, 0, 0);
   opacity: 0.7;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -100,7 +100,7 @@ button[type="submit"]:hover {
 
 .error-msg {
   color: red;
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 5px;
 }
 

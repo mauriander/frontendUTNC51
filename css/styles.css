@@ -55,11 +55,11 @@ body {
 /* Pusimos un saludo interactivo en lugar de un logo */
 .saludo {
   font-weight: bolder;
-  color: rgb(80, 123, 143);
+  color: #3190a0;
   font-size: 30px;
   white-space: nowrap;
   overflow: hidden;
-  width: 6em;
+  width: 7.5em;
   animation: animsaludo 4s ;
 }
 
@@ -69,13 +69,15 @@ body {
   }
 }
 .logo {
+  flex-direction: row;
   margin: 0;
   padding: 0;
+  display:flex;
 }
-/* .pnglogo {
-  width: 150px;
+ .pnglogo {
+  width: 50px;
   height: 50px;
-} */
+} 
 /* Barra de navegacion */
 .socialmedia {
   text-decoration: none;
@@ -86,7 +88,7 @@ body {
 .menu {
   margin-top: 15px;
   text-decoration: none;
-  display: contents;
+  
    flex-direction: row;
   justify-content: space-around;
 }
@@ -181,7 +183,7 @@ body {
 .eduli {
   list-style: none;
   display: flex;
-  margin: 0.5em;
+  margin: 0.25em;
 }
 
 .eduli.a {
@@ -351,13 +353,14 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
+  z-index: 999;
   left: 0;
   bottom: 0;
 }
 
 .footer-left {
   flex: 1;
+  padding: 32px;
 }
 
 .footer-links {
@@ -365,11 +368,13 @@ h2 {
   list-style: none;
   color: white;
   font-size: 18px;
+  
 }
 
 .footer-links a {
   text-decoration: none;
   color: white;
+  
   margin: 0 10px;
 }
 
@@ -394,7 +399,7 @@ h2 {
 
 .footer-right {
   flex: 1;
-
+  align-items: center;
   display: flex;
   justify-content: center;
 }
@@ -403,15 +408,21 @@ h2 {
   display: flex;
   flex-direction: column;
   list-style: none;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+align-items: center;
+  
+  
+  
 }
 
 .footer-icons a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  display: flex;
+  list-style: none;
+  color: white;
+  font-size: 18px;
 
-  margin-left: 10px;
-  text-align: center;
-  line-height: 40px;
+
+
 }
